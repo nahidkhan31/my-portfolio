@@ -1,12 +1,14 @@
-import React from 'react';
-import { Outlet } from 'react-router';
+import React from "react";
+import { Outlet } from "react-router";
+import Navbar from "../shared/Navbar/Navbar";
 
 const RootLayout = () => {
-    return (
-        <div>
-           <Outlet/> 
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <Outlet />
+    </div>
+  );
 };
 
 export default RootLayout;
