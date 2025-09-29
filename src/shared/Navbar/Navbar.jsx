@@ -1,29 +1,56 @@
 import React from "react";
 import Logo from "../Logo/Logo";
-import { NavLink } from "react-router";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const nav = (
     <>
       <li>
-        <NavLink>Home</NavLink>
+        <Link
+          to="home" // section id
+          spy={true} // active class observe করবে
+          smooth={true} // smooth scroll করবে
+          offset={-70} // navbar height adjust
+          duration={500} // scroll duration
+          activeClass="active-link" // css class যখন active
+        >
+          Home
+        </Link>
       </li>
       <li>
-        <NavLink>About Me</NavLink>
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          activeClass="active-link">
+          About Me
+        </Link>
       </li>
       <li>
-        <NavLink>Skills</NavLink>
+        <Link
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          activeClass="active-link">
+          Skills
+        </Link>
       </li>
       <li>
-        <NavLink>Home</NavLink>
+        <Link>Home</Link>
       </li>
       <li>
-        <NavLink>Home</NavLink>
+        <Link>Home</Link>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div
+      className="navbar fixed top-0 left-0 w-full z-50 
+    bg-base-100/70 backdrop-blur-md shadow-sm">
       {/* Left side: Logo */}
       <div className="navbar-start">
         <Logo />
@@ -31,7 +58,9 @@ const Navbar = () => {
 
       {/* Right side (lg+): menu */}
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-x-6">{nav}</ul>
+        <ul className="menu menu-horizontal px-1 gap-x-6 text-sm font-semibold">
+          {nav}
+        </ul>
       </div>
 
       {/* Small screen dropdown */}
@@ -54,7 +83,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-sm font-semibold">
             {nav}
           </ul>
         </div>

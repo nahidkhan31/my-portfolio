@@ -1,11 +1,22 @@
-import React from 'react';
+import React from "react";
+import Home2 from "../Home2/Home2";
+import About from "../About/About";
+import Skills from "../Skills/Skills";
 
 const Home = () => {
-    return (
-        <div>
-            <h1>Portfolio</h1>
-        </div>
-    );
+  return (
+    <div>
+      <div id="home" className="pt-20">
+        <Home2 />
+      </div>
+      <div id="about" className="pt-20 max-w-7xl mx-auto">
+        <About />
+      </div>
+      <div id="skills" className="pt-20 max-w-7xl mx-auto">
+        <Skills />
+      </div>
+    </div>
+  );
 };
 
 export default Home;
