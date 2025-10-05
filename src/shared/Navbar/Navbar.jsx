@@ -40,10 +40,15 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link>Home</Link>
-      </li>
-      <li>
-        <Link>Home</Link>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          activeClass="active-link">
+          Contact
+        </Link>
       </li>
     </>
   );
