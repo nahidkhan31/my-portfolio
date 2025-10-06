@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "icon": "FaCode",
+    "title": "Frontend Development",
+    "description": "Building responsive, accessible, and high-performance user interfaces using React.js, Next.js, Tailwind CSS, and modern JavaScript."
+  },
+  {
+    "id": 2,
+    "icon": "FaServer",
+    "title": "Backend Development",
+    "description": "Developing secure and efficient server-side applications with Node.js, Express.js, and MongoDB, including REST API integration."
+  },
+  {
+    "id": 3,
+    "icon": "FaMobileAlt",
+    "title": "Responsive & Cross-Browser Design",
+    "description": "Ensuring seamless performance and design consistency across all devices and major browsers."
+  },
+  {
+    "id": 4,
+    "icon": "FaSearch",
+    "title": "Performance Optimization",
+    "description": "Improving website load times, SEO readiness, and overall user experience using best development practices."
+  },
+  {
+    "id": 5,
+    "icon": "FaProjectDiagram",
+    "title": "Full Stack Web Applications",
+    "description": "Designing and developing complete web solutions from concept to deployment with scalable architecture."
+  },
+  {
+    "id": 6,
+    "icon": "FaPaintBrush",
+    "title": "UI/UX Implementation",
+    "description": "Translating Figma or design mockups into pixel-perfect, interactive, and user-friendly interfaces."
+  }
+]

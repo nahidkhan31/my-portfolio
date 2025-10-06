@@ -41,6 +41,17 @@ const Navbar = () => {
       </li>
       <li>
         <Link
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          activeClass="active-link">
+          Services
+        </Link>
+      </li>
+      <li>
+        <Link
           to="contact"
           spy={true}
           smooth={true}
@@ -69,7 +80,7 @@ const Navbar = () => {
       </div>
 
       {/* Small screen dropdown */}
-      <div className="navbar-end lg:hidden">
+      <div className="navbar-end  lg:hidden">
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost">
             <svg
@@ -88,7 +99,8 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-sm font-semibold">
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow-lg bg-base-100/70 backdrop-blur-md rounded-2xl 
+            w-52 text-sm font-semibold border border-base-200">
             {nav}
           </ul>
         </div>
