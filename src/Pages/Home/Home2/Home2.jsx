@@ -57,7 +57,7 @@ const Home2 = () => {
             {/* Download Resume Button */}
             <div className="mt-6">
               <a
-                href="/resume/Nahid_Khan_Niloy_Resume.pdf" // public ফোল্ডারে তোমার PDF
+                href="/public/Resume.pdf" // public ফোল্ডারে তোমার PDF
                 download="Nahid_Khan_Niloy_Resume.pdf">
                 <button className="btn bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-purple-500 hover:to-blue-500 flex items-center gap-2">
                   <FaDownload className="text-xl" /> {/* 👈 Icon added */}

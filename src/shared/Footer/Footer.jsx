@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
 
         {/* Middle Text */}
-        <p className="text-center mt-3npm run devnp ">
+        <p className="text-center mt-3">
           © {new Date().getFullYear()} | All rights reserved by{" "}
           <span className="underline">Nahid Khan Niloy</span>
         </p>
