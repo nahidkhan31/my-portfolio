@@ -1,9 +1,10 @@
 import React from "react";
 import dotsAnimation from "../../../assets/Lottie/Particles Green.json";
-import photo from "../../../assets/Picture/B612_20230516_184156_796.jpg";
+// import photo from "../../../assets/Picture/B612_20230516_184156_796.jpg";
 import Lottie from "lottie-react";
 
 const About = () => {
+  const photo = "https://i.ibb.co.com/7NWsCQ23/PXL-20251206-091517823-RAW-01-MP-COVER-2.png"
   return (
     <div className="mt-20">
       <div className="text-center text-3xl font-semibold text-blue-400 underline">
